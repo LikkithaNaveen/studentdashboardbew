@@ -14,13 +14,9 @@ const jwtkey='e-dash'
 
 const app=express()     
 app.use(express.json())
-// app.use(cors())
-app.use((req, res, cors,next) => {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    cors();
-    next();
-
-  });
+app.use(cors({
+    origin: '*'
+  }));
 
   
 app.post('/register',async(req,res)=>{
