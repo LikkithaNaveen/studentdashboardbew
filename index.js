@@ -17,6 +17,7 @@ app.use(express.json())
 app.use(cors({
     origin: '*'
   }));
+  
 
   
 app.post('/register',async(req,res)=>{
