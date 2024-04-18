@@ -65,6 +65,7 @@ app.post('/login',async(req,res)=>{
      let result= await personaldetails.save()
         res.send(result)
 
+        
     })
 
 app.get('/personal-details',async(req,res)=>{
